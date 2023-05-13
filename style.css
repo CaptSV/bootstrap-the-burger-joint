@@ -226,4 +226,26 @@ footer {
     }
 }
 
-/* color theme: antiflashwhite: e8e9eb,brightgreen: 9bc53d,persianred: c3423f,pakistangreen: 134611,vandyke: 362c28*/
+@media screen and (max-width: 400px) {
+    .parallax {
+        height: 15rem;
+    }
+
+    .parallax video {
+        margin-top: 2rem;
+    }
+
+    .menuBox {
+        padding: 0;
+    }
+
+    .cateringLeftImage {
+        min-height: 20rem;
+    }
+
+    footer {
+        margin-top: 5rem;
+        width: 100%;
+        height: 10rem;
+    }
+}
