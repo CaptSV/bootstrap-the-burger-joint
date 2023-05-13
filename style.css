@@ -1,0 +1,212 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #362c28;
+}
+
+a {
+    color: #362c28;
+    position: relative;
+    text-decoration: none;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: hsl(1, 52%, 51%);
+    bottom: 8px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navbar {
+    background-color: #e8e9eb;
+    width: 40rem;
+    margin-top: 4rem;
+    margin-right: 1rem;
+    box-shadow: -8px 10px 10px #362c28;
+}
+
+#navbarSupportedContent>button {
+    padding: 6px 12px;
+}
+
+.nav-link {
+    margin-right: 2rem;
+}
+
+.navbar ul {
+    margin: 0;
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+.logo {
+    position: fixed;
+    width: 10%;
+    top: 1rem;
+    left: 3rem;
+    color: #9bc53d;
+}
+
+.btn {
+    background-color: hsl(1, 52%, 51%);
+    border: none;
+    border-radius: 0;
+    --bs-btn-hover-bg: hsl(1, 52%, 45%);
+    --bs-btn-active-bg: hsl(1, 52%, 40%);
+    box-shadow: -5px 5px 2px #362c28;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-family: 'Days One', sans-serif;
+}
+
+.parallax {
+    height: 50rem;
+}
+
+.parallax video {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: -999;
+}
+
+#menu {
+    background-color: #9bc53d;
+    padding: 2rem;
+}
+
+.menuBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e8e9eb;
+    background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+    border-radius: 3px;
+    padding: 5rem;
+    height: 22rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cateringRow {
+    margin: 0;
+    height: 35rem;
+}
+
+.cateringBox {
+    background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.col-lg-6 {
+    padding: 0;
+}
+
+.cateringLeftImage {
+    min-height: 35rem;
+    background-image: url("https://images.pexels.com/photos/1474974/pexels-photo-1474974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+}
+
+.cateringBlock {
+    background: url("./assets/foodrawrings.jpg") rgba(155, 197, 61, 0.3);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: -15px -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cateringBox {
+    background-color: #e8e9eb;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    padding: auto 0;
+}
+
+.concrete {
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+}
+
+footer {
+    background-color: #9bc53d;
+    padding: 0;
+}
+
+.socialmediaicons>i {
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        width: 100%;
+        margin: 0;
+        box-shadow: 0 0 2px #362c28;
+        text-align: end;
+    }
+
+    .navbar-brand {
+        width: 10%;
+    }
+
+    .navbar-nav>li {
+        margin: 5px 0;
+    }
+
+    .nav-link:not(button) {
+        width: 100%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .parallax {
+        height: 25rem;
+    }
+
+    .menuBox {
+        height: 15rem;
+    }
+
+    .cateringLeftImage,
+    .cateringBlock {
+        min-height: 25rem;
+    }
+
+    footer {
+        margin-top: 15rem;
+        width: 100%;
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+/* color theme: antiflashwhite: e8e9eb,brightgreen: 9bc53d,persianred: c3423f,pakistangreen: 134611,vandyke: 362c28*/

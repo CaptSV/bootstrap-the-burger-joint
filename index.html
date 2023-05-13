@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Burger Joint</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/d2a586f403.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts CDN -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="contentContainer">
+      <header>
+        <!-- parallax background video -->
+        <img src="assets/logo.png" alt="company-logo" class="logo" />
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg ms-auto fixed-top concrete">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="assets/TBJ-Navbar-Transparent.png"
+                alt="company-brand"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto">
+                <li class="navbar-item">
+                  <a href="menu.html" id="menuLink" class="nav-link">Menu</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="catering.html" id="cateringLink" class="nav-link"
+                    >Catering</a
+                  >
+                </li>
+                <li class="navbar-item">
+                  <a href="careers.html" id="careersLink" class="nav-link"
+                    >Careers</a
+                  >
+                </li>
+                <li class="navbar-item">
+                  <a href="blog.html" id="blogLink" class="nav-link">Blog</a>
+                </li>
+              </ul>
+              <button class="btn">Order Online</button>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="parallax">
+          <video autoplay muted loop>
+            <source
+              src="https://www.pexels.com/download/video/7039911/"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <section id="menu" class="concrete">
+          <div class="menuBox">
+            <h2 class="title">Menu</h2>
+            <p>The only place for those cravings</p>
+            <button class="btn">View Menu</button>
+          </div>
+        </section>
+        <section id="catering">
+          <div class="row cateringRow">
+            <div class="col-lg-6">
+              <div class="cateringLeftImage"></div>
+            </div>
+            <div class="col-lg-6 cateringBlock">
+              <div class="cateringBox">
+                <h2 class="title">Catering</h2>
+                <p>Business event or special occassions, we got you covered.</p>
+                <button class="btn">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="concrete">
+        <div class="footercontainer text-center pt-5 pb-5">
+          <div class="socialmediaicons mb-3">
+            <i class="fa-brands fa-twitter fa-xl"></i>
+            <i class="fa-brands fa-facebook fa-xl"></i>
+            <i class="fa-brands fa-instagram fa-xl"></i>
+            <i class="fa-brands fa-youtube fa-xl"></i>
+            <i class="fa-solid fa-envelope fa-xl"></i>
+          </div>
+          <p class="m-0">©2008-2023 The Burger Joint. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
