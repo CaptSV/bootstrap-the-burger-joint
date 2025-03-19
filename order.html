@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Burger Joint</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/d2a586f403.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts CDN -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Content -->
+    <div id="contentContainer">
+      <header>
+        <a href="index.html">
+          <img src="assets/logo.png" alt="company-logo" class="logo" />
+        </a>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg ms-auto fixed-top concrete">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="assets/TBJ-Navbar-Transparent.png"
+                alt="company-brand"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-evenly"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav">
+                <li class="navbar-item">
+                  <a href="menu.html" id="menuLink" class="nav-link">Menu</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="catering.html" id="cateringLink" class="nav-link"
+                    >Catering</a
+                  >
+                </li>
+                <li class="navbar-item">
+                  <a href="contact.html" id="contactLink" class="nav-link"
+                    >Contact</a
+                  >
+                </li>
+                <li class="navbar-item">
+                  <a href="order.html" id="orderLink" class="btn"
+                    >Order Online</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="order-header concrete">
+          <div class="container text-center">
+            <h1 class="order-title">Order Online</h1>
+            <p class="order-subtitle">
+              Place your order for pickup or delivery.
+            </p>
+          </div>
+        </section>
+
+        <section class="order-content">
+          <div class="container">
+            <form id="orderForm">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2 class="order-section-title">Your Details</h2>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      name="phone"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="address" class="form-label"
+                      >Address (for delivery)</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="address"
+                      name="address"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h2 class="order-section-title">Your Order</h2>
+                  <div class="mb-3">
+                    <label for="burger" class="form-label">Burger</label>
+                    <select class="form-select" id="burger" name="burger">
+                      <option value="classic">Classic Burger</option>
+                      <option value="spicy">Spicy Burger</option>
+                      <option value="veggie">Veggie Burger</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="sides" class="form-label">Sides</label>
+                    <select class="form-select" id="sides" name="sides">
+                      <option value="fries">Loaded Fries</option>
+                      <option value="rings">Onion Rings</option>
+                      <option value="wings">Chicken Wings</option>
+                      <option value="none">None</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="drinks" class="form-label">Drinks</label>
+                    <select class="form-select" id="drinks" name="drinks">
+                      <option value="soda">Soda</option>
+                      <option value="milkshake">Milkshake</option>
+                      <option value="none">None</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="specialRequests" class="form-label"
+                      >Special Requests</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="specialRequests"
+                      name="specialRequests"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">
+                  Place Order
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="concrete">
+        <div class="footercontainer text-center pt-5 pb-5">
+          <div class="socialmediaicons mb-3">
+            <i class="fa-brands fa-twitter fa-xl"></i>
+            <i class="fa-brands fa-facebook fa-xl"></i>
+            <i class="fa-brands fa-instagram fa-xl"></i>
+            <i class="fa-brands fa-youtube fa-xl"></i>
+            <i class="fa-solid fa-envelope fa-xl"></i>
+          </div>
+          <p class="m-0">©2008-2025 The Burger Joint. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

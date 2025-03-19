@@ -32,14 +32,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Content -->
     <div id="contentContainer">
       <header>
-       
-        <img src="assets/logo.png" alt="company-logo" class="logo" />
+        <a href="index.html">
+          <img src="assets/logo.png" alt="company-logo" class="logo" />
+        </a>
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg ms-auto fixed-top concrete">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
               <img
                 src="assets/TBJ-Navbar-Transparent.png"
                 alt="company-brand"
@@ -56,8 +58,11 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto">
+            <div
+              class="collapse navbar-collapse justify-content-evenly"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav">
                 <li class="navbar-item">
                   <a href="menu.html" id="menuLink" class="nav-link">Menu</a>
                 </li>
@@ -67,21 +72,22 @@
                   >
                 </li>
                 <li class="navbar-item">
-                  <a href="careers.html" id="careersLink" class="nav-link"
-                    >Careers</a
+                  <a href="contact.html" id="contactLink" class="nav-link"
+                    >Contact</a
                   >
                 </li>
                 <li class="navbar-item">
-                  <a href="blog.html" id="blogLink" class="nav-link">Blog</a>
+                  <a href="order.html" id="orderLink" class="btn"
+                    >Order Online</a
+                  >
                 </li>
               </ul>
-              <button class="btn">Order Online</button>
             </div>
           </div>
         </nav>
       </header>
       <main>
-         <!-- parallax background video -->
+        <!-- Parallax -->
         <div class="parallax">
           <video autoplay muted loop playsinline>
             <source
@@ -90,13 +96,17 @@
             />
           </video>
         </div>
+
+        <!-- Menu Section -->
         <section id="menu" class="concrete">
           <div class="menuBox">
             <h2 class="title">Menu</h2>
             <p>The only place for those cravings</p>
-            <button class="btn">View Menu</button>
+            <a href="menu.html"><button class="btn">View Menu</button></a>
           </div>
         </section>
+
+        <!-- Catering Section -->
         <section id="catering">
           <div class="row cateringRow">
             <div class="col-lg-6">
@@ -112,6 +122,8 @@
           </div>
         </section>
       </main>
+
+      <!-- Footer -->
       <footer class="concrete">
         <div class="footercontainer text-center pt-5 pb-5">
           <div class="socialmediaicons mb-3">
@@ -121,7 +133,7 @@
             <i class="fa-brands fa-youtube fa-xl"></i>
             <i class="fa-solid fa-envelope fa-xl"></i>
           </div>
-          <p class="m-0">©2008-2023 The Burger Joint. All Rights Reserved.</p>
+          <p class="m-0">©2008-2025 The Burger Joint. All Rights Reserved.</p>
         </div>
       </footer>
     </div>

@@ -4,11 +4,238 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Burger Joint - Menu</title>
+    <title>The Burger Joint</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/d2a586f403.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts CDN -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hi</h1>
-    <p>You've Reached The Secret Menu!</p>
-    <p>Yeah, there's nothing here.</p>
+    <div id="contentContainer">
+      <header>
+        <a href="index.html">
+          <img src="assets/logo.png" alt="company-logo" class="logo" />
+        </a>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg ms-auto fixed-top concrete">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="assets/TBJ-Navbar-Transparent.png"
+                alt="company-brand"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-evenly"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav">
+                <li class="navbar-item">
+                  <a href="menu.html" id="menuLink" class="nav-link">Menu</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="catering.html" id="cateringLink" class="nav-link"
+                    >Catering</a
+                  >
+                </li>
+                <li class="navbar-item">
+                  <a href="contact.html" id="contactLink" class="nav-link"
+                    >Contact</a
+                  >
+                </li>
+                <li class="navbar-item">
+                  <a href="order.html" id="orderLink" class="btn"
+                    >Order Online</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <!-- Menu Banner -->
+        <section class="menu-header section-concrete">
+          <div class="container text-center concrete">
+            <h1 class="menu-title">Our Menu</h1>
+            <p class="menu-subtitle">Delicious burgers, sides, and more!</p>
+          </div>
+        </section>
+
+        <!-- Menu Items -->
+        <section class="menu-items">
+          <div class="container">
+            <div class="row">
+              <!-- Burgers -->
+              <div class="col-md-6 mb-4">
+                <h2 class="menu-category">Burgers</h2>
+                <div class="menu-item">
+                  <img
+                    src="assets/TBJ - Menu - Burger.jpg"
+                    alt="Classic Burger"
+                    class="menu-item-image"
+                  />
+                  <div class="menu-item-details">
+                    <h3 class="menu-item-name">Classic Burger</h3>
+                    <p class="menu-item-description">
+                      Our signature burger with lettuce, tomato, and special
+                      sauce.
+                    </p>
+                    <span class="menu-item-price">$8.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <img
+                    src="assets/TBJ - Menu - Spicy Burger.jpg"
+                    alt="Spicy Burger"
+                    class="menu-item-image"
+                  />
+                  <div class="menu-item-details">
+                    <h3 class="menu-item-name">Spicy Burger</h3>
+                    <p class="menu-item-description">
+                      A fiery burger with jalapenos, pepper jack cheese, and
+                      chipotle mayo.
+                    </p>
+                    <span class="menu-item-price">$9.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <img
+                    src="assets/TBJ - Menu - Veggie Burger.jpg"
+                    alt="Veggie Burger"
+                    class="menu-item-image"
+                  />
+                  <div class="menu-item-details">
+                    <h3 class="menu-item-name">Veggie Burger</h3>
+                    <p class="menu-item-description">
+                      A delicious plant-based burger with fresh vegetables and a
+                      tangy sauce.
+                    </p>
+                    <span class="menu-item-price">$9.49</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sides -->
+              <div class="col-md-6 mb-4">
+                <h2 class="menu-category">Sides</h2>
+                <div class="menu-item">
+                  <img
+                    src="assets/TBJ - Menu - Loaded Fries.jpg"
+                    alt="Loaded Fries"
+                    class="menu-item-image"
+                  />
+                  <div class="menu-item-details">
+                    <h3 class="menu-item-name">Loaded Fries</h3>
+                    <p class="menu-item-description">
+                      Crispy fries topped with cheese, bacon, and sour cream.
+                    </p>
+                    <span class="menu-item-price">$5.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <img
+                    src="assets/TBJ - Menu - Onion Rings.jpg"
+                    alt="Onion Rings"
+                    class="menu-item-image"
+                  />
+                  <div class="menu-item-details">
+                    <h3 class="menu-item-name">Onion Rings</h3>
+                    <p class="menu-item-description">
+                      Golden-fried onion rings with our special dipping sauce.
+                    </p>
+                    <span class="menu-item-price">$4.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <img
+                    src="assets/TBJ - Menu - Chicken Wings.jpg"
+                    alt="Chicken Wings"
+                    class="menu-item-image"
+                  />
+                  <div class="menu-item-details">
+                    <h3 class="menu-item-name">Chicken Wings</h3>
+                    <p class="menu-item-description">
+                      Crispy chicken wings tossed in your choice of sauce (BBQ,
+                      Buffalo, or Garlic Parmesan).
+                    </p>
+                    <span class="menu-item-price">$7.99</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <h2 class="menu-category">Drinks</h2>
+                <div class="menu-item">
+                  <div class="menu-item-details">
+                    <h3 class="menu-item-name">Soda</h3>
+                    <span class="menu-item-price">$2.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item-details">
+                    <h3 class="menu-item-name">Milkshake</h3>
+                    <span class="menu-item-price">$4.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="concrete">
+        <div class="footercontainer text-center pt-5 pb-5">
+          <div class="socialmediaicons mb-3">
+            <i class="fa-brands fa-twitter fa-xl"></i>
+            <i class="fa-brands fa-facebook fa-xl"></i>
+            <i class="fa-brands fa-instagram fa-xl"></i>
+            <i class="fa-brands fa-youtube fa-xl"></i>
+            <i class="fa-solid fa-envelope fa-xl"></i>
+          </div>
+          <p class="m-0">©2008-2025 The Burger Joint. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
   </body>
 </html>

@@ -30,7 +30,7 @@ a:hover::before {
 
 .navbar {
     background-color: #e8e9eb;
-    width: 40rem;
+    width: 30rem;
     margin-top: 4rem;
     margin-right: 1rem;
     box-shadow: -8px 10px 10px #362c28;
@@ -148,6 +148,190 @@ a:hover::before {
 
 .concrete {
     background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+}
+
+.menu-header {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    /* Light background for header */
+}
+
+.menu-title {
+    font-size: 3rem;
+    font-family: 'Days One', sans-serif;
+    margin-bottom: 10px;
+}
+
+.menu-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.menu-items {
+    padding: 40px 0;
+}
+
+.menu-category {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Days One', sans-serif;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.menu-item-image {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.menu-item-details {
+    flex-grow: 1;
+}
+
+.menu-item-name {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.menu-item-description {
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.menu-item-price {
+    font-weight: bold;
+    color: hsl(1, 52%, 51%);
+}
+
+.catering-header {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    /* Light background for header */
+}
+
+.catering-title {
+    font-size: 3rem;
+    font-family: 'Days One', sans-serif;
+    margin-bottom: 10px;
+}
+
+.catering-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.catering-content {
+    padding: 40px 0;
+}
+
+.catering-image-col {
+    padding-right: 20px;
+}
+
+.catering-details-col {
+    padding-left: 20px;
+}
+
+.catering-image {
+    width: 100%;
+    max-height: 550px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.catering-section-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-family: 'Days One', sans-serif;
+}
+
+.catering-description {
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.catering-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.catering-content ul li {
+    margin-bottom: 10px;
+}
+
+.contact-header {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-family: 'Days One', sans-serif;
+    margin-bottom: 10px;
+}
+
+.contact-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.contact-content {
+    padding: 40px 0;
+}
+
+.contact-form-col {
+    padding-right: 20px;
+}
+
+.contact-details-col {
+    padding-left: 20px;
+}
+
+.contact-section-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-family: 'Days One', sans-serif;
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Prevent map overflow */
+}
+
+.order-header {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.order-title {
+    font-size: 3rem;
+    font-family: 'Days One', sans-serif;
+    margin-bottom: 10px;
+}
+
+.order-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.order-content {
+    padding: 40px 0;
+}
+
+.order-section-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-family: 'Days One', sans-serif;
 }
 
 footer {
