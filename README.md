@@ -42,7 +42,7 @@ If you encounter any issues:
 ## Authors
 
 Simon Valenzuela
-[@YourGitHubHandle](https://github.com/CaptSV) (Replace with your actual GitHub handle)
+[@CaptSV](https://github.com/CaptSV)
 
 ## Version History
 
